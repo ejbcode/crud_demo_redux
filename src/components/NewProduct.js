@@ -2,8 +2,11 @@ import React, { useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { createNewProductAction } from "../actions/productsActions";
 
-const NewProduct = () => {
+const NewProduct = ({ history }) => {
   const dispatch = useDispatch();
+  const loading = useSelector((state) => state.products.loading);
+  const error = useSelector((state) => state.products.error);
+
   const addProduct = (product) => dispatch(createNewProductAction(product));
 
   const [product, setProduct] = useState({ name: "", price: "" });
@@ -18,6 +21,7 @@ const NewProduct = () => {
     if (product.name.trim() === "" || product.price.trim() === "") return;
 
     addProduct(product);
+    history.push("/");
   };
 
   return (
@@ -30,7 +34,7 @@ const NewProduct = () => {
             </h2>
             <form onSubmit={handleSubmit}>
               <div className="form-group">
-                <label for="name">Email address</label>
+                <label htmlFor="name">Email address</label>
                 <input
                   id="name"
                   type="text"
@@ -42,7 +46,7 @@ const NewProduct = () => {
                 />
               </div>
               <div className="form-group">
-                <label for="price">Email address</label>
+                <label htmlFor="price">Email address</label>
                 <input
                   id="price"
                   type="number"
@@ -60,6 +64,19 @@ const NewProduct = () => {
                 Add new product
               </button>
             </form>
+            {loading ? (
+              <div className="d-flex justify-content-center mt-3">
+                <div className="spinner-border" role="status">
+                  <span className="sr-only">Loading...</span>
+                </div>
+              </div>
+            ) : null}
+
+            {error ? (
+              <p className="alert alert-danger p2 mt-3 text-center">
+                Opps, something went wrong
+              </p>
+            ) : null}
           </div>
         </div>
       </div>

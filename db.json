@@ -1,5 +1,5 @@
 {
-  "productos": [
+  "products": [
     {
       "id": 1,
       "nombre": "Jugo de Zanahoria",
@@ -24,6 +24,284 @@
       "nombre": "Jugo de Fresa",
       "precio": "200",
       "id": 5
+    },
+    {
+      "name": "rerer",
+      "price": 4,
+      "id": 6
+    },
+    {
+      "product": {
+        "name": "utyu",
+        "price": "876867"
+      },
+      "id": 7
+    },
+    {
+      "product": {
+        "name": "123",
+        "price": "123"
+      },
+      "id": 8
+    },
+    {
+      "product": {
+        "name": "6",
+        "price": "6"
+      },
+      "id": 9
+    },
+    {
+      "product": {
+        "name": "87",
+        "price": "78"
+      },
+      "id": 10
+    },
+    {
+      "product": {
+        "name": "7",
+        "price": "7"
+      },
+      "id": 11
+    },
+    {
+      "product": {
+        "name": "65",
+        "price": "65"
+      },
+      "id": 12
+    },
+    {
+      "product": {
+        "name": "76",
+        "price": "76"
+      },
+      "id": 13
+    },
+    {
+      "product": {
+        "name": "76",
+        "price": "76"
+      },
+      "id": 14
+    },
+    {
+      "product": {
+        "name": "76",
+        "price": "76"
+      },
+      "id": 15
+    },
+    {
+      "product": {
+        "name": "67",
+        "price": "76"
+      },
+      "id": 16
+    },
+    {
+      "product": {
+        "name": "76",
+        "price": "76"
+      },
+      "id": 17
+    },
+    {
+      "product": {
+        "name": "76",
+        "price": "6"
+      },
+      "id": 18
+    },
+    {
+      "product": {
+        "name": "76",
+        "price": "67"
+      },
+      "id": 19
+    },
+    {
+      "product": {
+        "name": "76",
+        "price": "76"
+      },
+      "id": 20
+    },
+    {
+      "product": {
+        "name": "76",
+        "price": "76"
+      },
+      "id": 21
+    },
+    {
+      "product": {
+        "name": "76",
+        "price": "760"
+      },
+      "id": 22
+    },
+    {
+      "product": {
+        "name": "76",
+        "price": "7607"
+      },
+      "id": 23
+    },
+    {
+      "product": {
+        "name": "76",
+        "price": "7607"
+      },
+      "id": 24
+    },
+    {
+      "product": {
+        "name": "767",
+        "price": "7607"
+      },
+      "id": 25
+    },
+    {
+      "product": {
+        "name": "76799",
+        "price": "7607"
+      },
+      "id": 26
+    },
+    {
+      "product": {
+        "name": "76799f",
+        "price": "7607"
+      },
+      "id": 27
+    },
+    {
+      "product": {
+        "name": "8",
+        "price": "8"
+      },
+      "id": 28
+    },
+    {
+      "product": {
+        "name": "8",
+        "price": "6"
+      },
+      "id": 29
+    },
+    {
+      "product": {
+        "name": "87",
+        "price": "87"
+      },
+      "id": 30
+    },
+    {
+      "product": {
+        "name": "87555",
+        "price": "87"
+      },
+      "id": 31
+    },
+    {
+      "product": {
+        "name": "87555345354",
+        "price": "87"
+      },
+      "id": 32
+    },
+    {
+      "product": {
+        "name": "t",
+        "price": "6"
+      },
+      "id": 33
+    },
+    {
+      "product": {
+        "name": "5",
+        "price": "6"
+      },
+      "id": 34
+    },
+    {
+      "product": {
+        "name": "5",
+        "price": "5"
+      },
+      "id": 35
+    },
+    {
+      "product": {
+        "name": "6",
+        "price": "6"
+      },
+      "id": 36
+    },
+    {
+      "product": {
+        "name": "767",
+        "price": "6"
+      },
+      "id": 37
+    },
+    {
+      "product": {
+        "name": "7676",
+        "price": "66"
+      },
+      "id": 38
+    },
+    {
+      "product": {
+        "name": "65",
+        "price": "456"
+      },
+      "id": 39
+    },
+    {
+      "product": {
+        "name": "65",
+        "price": "456"
+      },
+      "id": 40
+    },
+    {
+      "product": {
+        "name": "65",
+        "price": "456"
+      },
+      "id": 41
+    },
+    {
+      "product": {
+        "name": "7",
+        "price": "7"
+      },
+      "id": 42
+    },
+    {
+      "product": {
+        "name": "9",
+        "price": "9"
+      },
+      "id": 43
+    },
+    {
+      "product": {
+        "name": "76",
+        "price": "7"
+      },
+      "id": 44
+    },
+    {
+      "product": {
+        "name": "876",
+        "price": "678"
+      },
+      "id": 45
     }
   ]
 }
