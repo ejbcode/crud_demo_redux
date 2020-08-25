@@ -6,20 +6,17 @@ const NewProduct = ({ history }) => {
   const dispatch = useDispatch();
   const loading = useSelector((state) => state.products.loading);
   const error = useSelector((state) => state.products.error);
-
   const addProduct = (product) => dispatch(createNewProductAction(product));
 
   const [product, setProduct] = useState({ name: "", price: "" });
 
   const handleChange = (event) => {
     setProduct({ ...product, [event.target.name]: event.target.value });
-    console.log(event.target.value);
   };
 
   const handleSubmit = (event) => {
     event.preventDefault();
     if (product.name.trim() === "" || product.price.trim() === "") return;
-
     addProduct(product);
     history.push("/");
   };

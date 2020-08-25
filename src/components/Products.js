@@ -1,12 +1,14 @@
 import React, { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { loadingProductsActions } from "../actions/productsActions";
+import Product from "./Product";
 
 const Products = () => {
   const dispatch = useDispatch();
+  const products = useSelector((state) => state.products.products);
 
   useEffect(() => {
-    const loadProducts = () => dispatch(loadingProductsActions);
+    const loadProducts = () => dispatch(loadingProductsActions());
     loadProducts();
   }, []);
 
@@ -21,7 +23,13 @@ const Products = () => {
             <th scope="col">Actions</th>
           </tr>
         </thead>
-        <tbody></tbody>
+        <tbody>
+          {products.length === 0 ? (
+            <p>No hay productos</p>
+          ) : (
+            products.map((product) => <Product key={product.id} {...product} />)
+          )}
+        </tbody>
       </table>
     </>
   );

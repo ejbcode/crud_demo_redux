@@ -38,7 +38,22 @@ export default function (state = initialState, action) {
     case LOADING_PRODUCTS:
       return {
         ...state,
-        loading: true,
+        loading: action.payload,
+      };
+
+    case LOADING_PRODUCTS_SUCCESS:
+      return {
+        ...state,
+        loading: false,
+        error: null,
+        products: action.payload,
+      };
+
+    case LOADING_PRODUCTS_ERROR:
+      return {
+        ...state,
+        loading: false,
+        error: action.payload,
       };
     default:
       return state;
